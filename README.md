@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# projeto-int. #
-=======
- 
->>>>>>> 750846aef5c5cbed9102e5aa06ffbc79eebeac28
+<h1> # Fenix Tecnologia # <h1>
+
+<h2> **Requisitos** <h2>
+
