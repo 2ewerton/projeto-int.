@@ -1,23 +1,20 @@
- <h1> Fenix Tecnologia <h1>
+ *<h1> Fenix Tecnologia <h1>*
 
- <h2> Proposta <h2>
+ <h2>  Proposta  <h2>
 
- Nosso aplicativo foi pensando para trazer praticidade para a população, poupando tempo que gastaria durante uma visita a um mercado. 
- Oferecendo ao usuário uma série de ferramentas como: lista de compras, comparativos de preços, calculadora automática de produtos, valores atualizados de produtos, 
- dá a possibilidade de fazer buscas pelo nome do produto, por rede de lojas ou categoria.
+ *<h3>- Dieta: <h3>* Este módulo irá contar com duas interfaces diferentes, onde a interface do profissíonal de nutrição irá alimentar uma lita com os tópicos de alimento, horário e quantidade.
+ Na interface do paciente, irá aparecer todas as informações que foram passadas pela nutricionista ao mesmo, em contrapartida o paciênte deverá alimentar a mesma lista, dizendo o que ele comeu em cada refeição, as quantidades e os horários. 
+
+ *<h3>- Alarme: <h3>* Este módulo irá contar com duas interfaces diferentes, onde a interface do profissíonal de nutrição irá acrescentar horário para o paciente ingerir alimentos e água 
+ Na interface do paciente, irá aparecer todas as informações que foram passadas pela nutricionista ao mesmo, em contrapartida o paciênte deverá alimentar a mesma lista,confirmando os horários ou alterando conforme sua disponibilidade .
  
- <h3> - Comparativo de preços: <h3> Nosso aplicativo oferecerá a função de comparar preços com mercados da mesma rede em sua região,
-   com isso poupando seu tempo e seu dinheiro.
+ *<h3>- Acompanhamento de Peso: <h3>* Módulo que ajuda o usuário a compreender seu hábitos alimentares registrando as calorias consumidas. Vai possuir monitoramento de gordura, proteínas, carboidratos e colesterol.
 
- <h3>- Lista de Produtos: <h3> Contaremos com informações de todo o estoque dos mercados atualizados para sempre ofertar a melhor 
-   experiência para o usuário. Podendo assim criar suas prórpias listas de compra trabalhando diretamente com scanner de 
-   produtos.
- 
- <h3> - Scanner automático de produtos: <h3> Com essa funcionalidade você pode dar check automaticamente nos itens da sua lista 
-   e calcular o valor final de suas compras antes mesmo de chegar ao carrinho.
-<h2> cadastro de cliente <h2>
+ *<h3>- Gráfico de Evolução:  <h3>* Gráfico que ficará disponível a ambos usuários que será alimentado pelas informações que o paciente inserir no aplicativo, como taxas de colesterol e glicose, calorias engeridas e peso  atual.
 
-<h3>pessoa fisica<h3> 
+ *<h3>- Atividade Física: <h3>* Neste módulo será opcional o uso do mesmo, se o proficional de nutrição julgar necessário a realização de exercícios físicos o mesmo poderá recomendar ao seu paciente, nele terá exercícios padrões e a opção de listar um outro exercício. Na interface do paciente ele poderá conferir quais exercicíos foram recomendados para ele e também um exemplo de como o exercício é executado.
+
+ *<h3>- Agendamento de consultas: <h3> * Módulo onde o paciente pode solicitar ao seu nutricionista uma consulta não prevista.
 
 Nome completo
 CPF 
