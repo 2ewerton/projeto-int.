@@ -14,40 +14,28 @@
 
  *<h3>- Agendamento de consultas: <h3> * Módulo onde o paciente pode solicitar ao seu nutricionista uma consulta não prevista.
 
-pessoa fisica
+Requisitos Funcionais
 
-Nome completo
-CPF 
-Data de aniversário
-Profissão
-Qual foi o primeiro canal de contato (como conheceu a marca)
-Endereço completo, incluindo cidade, estado e CEP
-Telefone fixo
-Celular
-E-mail
-Observações/Comentários
-Data de inclusão no cadastro
+Requisitos Func.  | Descrição | prioridade |Depende de|
+----------------- |-----------|------------|----------|
+ RF 01            |           |            |          |
+ RF 02            |           |            |          |
+ RF 03            |           |            |          |
+ RF 04            |           |            |          |
 
-<h3>pessoa juridica<h3>
+Regras de Negócio
 
-Razão Social
-Nome fantasia
-CNPJ
-Inscrição estadual
-Inscrição municipal
-Data da fundação
-Atividade econômica
-Quantidade de funcionários
-Como conheceu esse cliente e/ou primeiro canal de contato
-Endereço completo, incluindo cidade, estado e CEP
-Nome completo do contato dentro da empresa
-Departamento
-Cargo
-Telefone fixo
-Celular
-E-mail
-Site
-Observações/Comentários
-Data de inclusão no cadastro
+Regras de Negócios| Descrição | prioridade |Depende de|
+----------------- |-----------|------------|----------|
+ RN 01            |           |            |          |
+ RN 02            |           |            |          |
+ RN 03            |           |            |          |
+ RN 04            |           |            |          |
 
-transferencia de dados - exportar planilha do excel para o app/web   media/baixa
+ Requisitos não funcionais
+Requisitos Não F. | Descrição |  Categoria |  Escopo  |Prioridade| Depende de |
+----------------- |-----------|------------|----------|----------|------------|
+ RNF 01            |           |            |          |
+ RNF 02            |           |            |          |
+ RNF 03            |           |            |          |
+ RNF 04            |           |            |          |
