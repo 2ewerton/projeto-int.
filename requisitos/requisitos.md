@@ -18,7 +18,7 @@
 
 *<h3>Requisitos Funcionais</h3>*
 
-Requisitos Func.  | Descrição | prioridade |Depende de|
+Requisitos Func. | Descrição | prioridade |Depende de.|
 ----------------- |-----------|------------|----------|
  RF 01  |Efetuar Cadastro| Alta|--|
  RF 02  |Efetuar Login| Média|RF 01|
@@ -28,23 +28,32 @@ Requisitos Func.  | Descrição | prioridade |Depende de|
  RF 06  |Criação e visualização de dieta|Alta|--|
  RF 07  |Estipulação de Horários|Alta|RF 06|
  RF 08  |Acompanhamento de peso|Média|--|
- RF 09  |Gráfico de Evlução|Média|RF 06 / RF 08|
+ RF 09  |Gráfico de Evolução|Média|RF 06 / RF 08|
  RF 10  |Atividade Física|Baixa|--|
  RF 11  |Agendamento de consultas|Médio|--|
+ RN 12  |Efetuar LogOff|Alto|RF 01 / RF 02|
+
 
 *<h3>Regras de Negócio</h3>*
 
-Regras de Negócios| Descrição | prioridade |Depende de|
------------------ |-----------|------------|----------|
- RN 01            |           |            |          |
- RN 02            |           |            |          |
- RN 03            |           |            |          |
- RN 04            |           |            |          |
+Regras de Negócios| Descrição |prioridade| Depende de.|
+|----------|-----------|------------|----------|
+ RN 01     |           |            |          |
+ RN 02     |           |            |          |
+ RN 03     |           |            |          |
+ RN 04     |           |            |          |
 
 *<h3>Requisitos não funcionais</h3>*
-Requisitos Não F. | Descrição |  Categoria |  Escopo  |Prioridade| Depende de |
+Requisitos Não F. | Descrição |  Categoria |  Escopo  |Prioridade| Depende de. |
 ----------------- |-----------|------------|----------|----------|------------|
- RNF 01            |           |            |          |
- RNF 02            |           |            |          |
- RNF 03            |           |            |          |
- RNF 04            |           |            |          |
+ RNF 01|As Informacões cadastradas deverão ser guardadas em um banco dados protegito por criptografia|Segurança de acesso|Sistema|Alta|RN 01|
+ RNF 02|Informações cadastradas devem ser guardadas de forma criptografada nos bancos de dados do app|
+  Segurança de acesso|Sistema|Alta|RF 02|
+ RNF 03|O sistema deve oferecer a opção de leitura, alteração e exclusão de informações cadastradas|Segurança de dados|Funcionalidade|Alta|RF 03|
+ RNF 04|Sistema deve apresentar um questionário inicial contendo algumas informações no primeiro acesso|Usabilidade|Sistema|Média|RF 04|
+RNF 05|O Sistema deve conter funcionalidades diferentes nas interfaces do profissional e do  paciente.|Interoperabilidade|Sistema|Alta|--|
+ RNF 06|O sistema deverá contar com gráficos e dashboard para os usuários acomanharem sua evolução|Usabilidade|Sistema|Média|RF 09|
+ RNF 07|O sistema deverá ter um menu com recomendações de exercícios físicos que possam corroborar com as dietas estipuladas|Usabilidade|Funcionalidade|Baixa|--|
+ RNF 08|O sistema irá contar com a opção de marcar consultas online ou presenciais fora de agenda.|Atratividade|Funcionalidade|Média|--|
+ RNF 09 | | | | |
+ RNF 09 | | | | |
