@@ -64,6 +64,37 @@ RNF 05|O Sistema deve conter funcionalidades diferentes nas interfaces do profis
 
 *<h3>Prototipação de telas</h3>*
 
+*<h4>Cadastro de usuário</h4>*
+
 Campo|Tipo|Tamanho|
-:--:|:-------:|:--:|:--------:|
-Cadastro|Vai conter campos
+:--:|:-------:|:--:|
+CPF | Texto | 11 |
+Nome | Texto | Inteiro |
+Endereço | Texto | Inteiro |
+Telefone | Numérico | 9 |
+Email |Texto | 256 |
+Sexo | Texto | Inteiro |
+
+*<h4>Login</h4>*
+
+Campo|Tipo|Tamanho|
+|:---:|:---:|:-----:|
+Usuário|Texto|Inteiro|
+Senha| Texto | Inteiro|
+
+*<h4>Atualização de dados</h4>*
+
+Campo|Tipo|Tamanho|
+|:---:|:---:|:-----:|
+CPF | Texto | 11 |
+Nome | Texto | Inteiro |
+Endereço | Texto | Inteiro |
+Telefone | Numérico | 9 |
+Email |Texto | 256 |
+Sexo | Texto | Inteiro |
+
+*<h4>Questionário de primeiro acesso (Paciente)</h4>*
+
+Campo|Tipo|Tamanho|
+|:---:|:---:|:-----:|
+Paciente terá um questionário onde ele precisará  inserir as seguintes informações:Nome Completo, Idade, Altura, Peso, Alimentos favoritos|
