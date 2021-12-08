@@ -20,18 +20,19 @@
 
 Requisitos Func. | Descrição | Prioridade |Depende de|
 |:-----------------:|:-----------:|:------------:|:----------:|
- RF 01 |Efetuar Cadastro| Alta|--|
+ RF 01 |Efetuar Cadastro (Nutricionista / Paciente)| Alta|--|
  RF 02 |Efetuar Login| Média|RF 01|
  RF 03 |Atualização de cadastro| Média|RF 01 / RF 02|
- RF 04 |Primeiro acesso ( Questionário  )|Alta|RF 02|
- RF 05 | Menu com todas as funcionalidades do App|Alta |--|
- RF 06 |Criação e visualização de dieta|Alta|--|
- RF 07 |Estipulação de Horários|Alta|RF 06|
- RF 08 |Acompanhamento de peso|Média|--|
- RF 09 |Gráfico de Evolução|Média|RF 06 / RF 08|
- RF 10 |Atividade Física|Baixa|--|
- RF 11 |Agendamento de consultas|Médio|--|
- RF 12 |Efetuar LogOff|Alto|RF 01 / RF 02|
+ RF 04 |Primeiro acesso (Questionário)|Alta|RF 02|
+ RF 05 |Questionários Sazonais(Questionários que devem ser preenchidos pelo paciente semanalmente)| Média | -- |
+ RF 06 | Menu com todas as funcionalidades do App|Alta |--|
+ RF 07 |Criação e visualização de dieta|Alta|--|
+ RF 08 |Estipulação de Horários|Alta|RF 06|
+ RF 09 |Acompanhamento de peso|Média|--|
+ RF 10 |Gráfico de Evolução|Média|RF 06 / RF 08|
+ RF 11 |Atividade Física|Baixa|--|
+ RF 12 |Agendamento de consultas|Médio|--|
+ RF 13 |Efetuar LogOff|Alto|RF 01 / RF 02|
 
 
 *<h3>Regras de Negócio</h3>*
@@ -40,14 +41,16 @@ Regras de Negócios| Descrição |Prioridade| Depende de.|
 |:----------:|:-----------:|:------------:|:----------:|
  RN 01|O sistema deve conter autenticação de CEP e CPF|Alta|RF 01|
  RN 02|O sistema deve contar com um sistema ant-robô ( Captcha )|Alta|--|
- RN 03|O Sistema deve suportar um grande tráfego de pelo menos 1000 pessoas utilizando simultâneamente|Alta|--|
+ RN 03|O Sistema deve suportar um grande tráfego de pelo menos 1000 acessos simultâneos|Alta|--|
  RN 04|As informações guardadas em bancos de dados devem ser encriptadas|Alta|--|
  RN 05|As informações alteradas pelos usuários devem ser atualizadas no aplicativo em até 30 segundos|Média|--|
  RN 06|O sistema deve suportar informações sendo alteradas pelo Nutricionista e pelo paciente simultâneamente|Alta|--|
  RN 07|O sistema deve contar com interface Web e Mobile ( Rodar em diferentes navegadores como Chrome, Vivaldi, Opera. E sistemas Mobile como Android e IOS)|Alta|--|
  RN 08| Os dados coletados através do preenchimento dos questionarios serão utilizadas na criação dos gráficos de acompanhamento| Baixa | RF 04|
  RN 09|Deverá existir a função de excluir todas as informações de usuário do sistema|Alta|--|
- RN 10|Senhas de usuários deverão contar com caracteres, numerais e símbolos, totalizando pelo menos 8 dígitos na senha|Alta|--|
+ RN 10| Gráficos devem ser atualizados semanalmente| Média | RF 05|
+ RN 11|Senhas de usuários deverão contar com caracteres, numerais e símbolos, totalizando pelo menos 8 dígitos na senha|Alta|--|
+ RN 12| O sistema deve ser capaz de diferenciar no ato acesso, se é o nutricionista ou o paciente que está logando. | Alta | RF 02|
 
 *<h3>Requisitos não funcionais</h3>*
 Requisitos Não F. | Descrição |  Categoria |  Escopo  |Prioridade| Depende de. |
