@@ -45,8 +45,9 @@ Regras de Negócios| Descrição |Prioridade| Depende de.|
  RN 05|As informações alteradas pelos usuários devem ser atualizadas no aplicativo em até 30 segundos|Média|--|
  RN 06|O sistema deve suportar informações sendo alteradas pelo Nutricionista e pelo paciente simultâneamente|Alta|--|
  RN 07|O sistema deve contar com interface Web e Mobile ( Rodar em diferentes navegadores como Chrome, Vivaldi, Opera. E sistemas Mobile como Android e IOS)|Alta|--|
- RN 08|Deverá existir a função de excluir todas as informações de usuário do sistema|Alta|--|
- RN 09|Senhas de usuários deverão contar com caracteres, numerais e símbolos, totalizando pelo menos 8 dígitos na senha|Alta|--|
+ RN 08| Os dados coletados através do preenchimento dos questionarios serão utilizadas na criação dos gráficos de acompanhamento| Baixa | RF 04|
+ RN 09|Deverá existir a função de excluir todas as informações de usuário do sistema|Alta|--|
+ RN 10|Senhas de usuários deverão contar com caracteres, numerais e símbolos, totalizando pelo menos 8 dígitos na senha|Alta|--|
 
 *<h3>Requisitos não funcionais</h3>*
 Requisitos Não F. | Descrição |  Categoria |  Escopo  |Prioridade| Depende de. |
@@ -66,7 +67,7 @@ RNF 05|O Sistema deve conter funcionalidades diferentes nas interfaces do profis
 
 *<h4>Cadastro de usuário</h4>*
 
-Campo|Tipo|Tamanho|
+Campos|Tipo|Tamanho|
 :--:|:-------:|:--:|
 CPF | Texto | 11 |
 Nome | Texto | Inteiro |
@@ -77,14 +78,14 @@ Sexo | Texto | Inteiro |
 
 *<h4>Login</h4>*
 
-Campo|Tipo|Tamanho|
+Campos|Tipo|Tamanho|
 |:---:|:---:|:-----:|
 Usuário|Texto|Inteiro|
 Senha| Texto | Inteiro|
 
 *<h4>Atualização de dados</h4>*
 
-Campo|Tipo|Tamanho|
+Campos|Tipo|Tamanho|
 |:---:|:---:|:-----:|
 CPF | Texto | 11 |
 Nome | Texto | Inteiro |
@@ -95,6 +96,22 @@ Sexo | Texto | Inteiro |
 
 *<h4>Questionário de primeiro acesso (Paciente)</h4>*
 
-Campo|Tipo|Tamanho|
+Campos|Tipo|Tamanho|
 |:---:|:---:|:-----:|
-Paciente terá um questionário onde ele precisará  inserir as seguintes informações:Nome Completo, Idade, Altura, Peso, Alimentos favoritos|
+Paciente terá um questionário onde ele precisará  inserir as seguintes informações:Nome Completo, Idade, Altura, Peso, Alimentos favoritos | Texto | Inteiro |
+Exames| Anexo | Inteiro |
+Objetos | Texto | Inteiro |
+Hábitos Alimentares | Texto | Inteiro|
+
+*<h4>Menu com todas as funcionalidades do App</h4>*
+Campos|Tipo|Tamanho|
+|:---:|:---:|:-----:|
+A tela deve conter um menu em formato de lista ou cascata listando todas as funcionalidades do aplicativo com botões interativos| Lista | Inteiro| 
+
+*<h4>Criação e visualização de dieta</h4>*
+
+Campos|Tipo|Tamanho|
+|:---:|:---:|:-----:|
+Na interface do Nutricionista, deve ser possível a inserção de uma dieta em formato de lista interativa. Na interface do paciente, ele deve ser capaz de visualizar as informações inseridas pelo profissional. | Texto | Inteiro
+
+*<h4>Estipulação de Horários</h4>*
