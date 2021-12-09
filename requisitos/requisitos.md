@@ -21,18 +21,28 @@
 Requisitos Func. | Descrição | Prioridade |Depende de|
 |:-----------------:|:-----------:|:------------:|:----------:|
  RF 01 |Efetuar Cadastro (Nutricionista / Paciente)| Alta|--|
- RF 02 |Efetuar Login| Média|RF 01|
- RF 03 |Atualização de cadastro| Média|RF 01 / RF 02|
- RF 04 |Primeiro acesso (Questionário)|Alta|RF 02|
- RF 05 |Questionários Sazonais(Questionários que devem ser preenchidos pelo paciente semanalmente)| Média | -- |
- RF 06 | Menu com todas as funcionalidades do App|Alta |--|
- RF 07 |Criação e visualização de dieta|Alta|--|
- RF 08 |Estipulação de Horários|Alta|RF 06|
- RF 09 |Acompanhamento de peso|Média|--|
- RF 10 |Gráfico de Evolução|Média|RF 06 / RF 08|
- RF 11 |Atividade Física|Baixa|--|
- RF 12 |Agendamento de consultas|Médio|--|
- RF 13 |Efetuar LogOff|Alto|RF 01 / RF 02|
+ RF 02 |Efetuar Login / LogOff ( Nutricionista / Paciente )| Média|RF 01|
+ RF 03 |Acessar Menu com todas as funcionalidades do app ( Nutricionista )| Média|RF 01 / RF 02|
+ RF 04 |Poder criar dietas|Alta|--|
+ RF 05 |Sugerir Horários ( Alimentação, Atividade Física, Sono e etc..)| Média | RF 04 |
+ RF 06 |Sugestões do Nutricionista|Baixa|--|
+ RF 07 |Criação de relatórios|Alta|--|
+ RF 08 |Sugestão de atividades físicas|Média|--|
+ RF 09 |Agendamento de consultas|Média|--|
+ RF 10 |Acessar Menu do paciente|Média|RF 03|
+ RF 11 |Poder cadastrar, atualizar e excluir clientes/pacientes|Média|RF 10|
+ RF 12 |Geração de relatórios|Médio|RF 10|
+ RF 13 |Acompanhamento de resultados|Alto|RF 12|
+ RF 14 |Primeiro acesso Paciente ( Questionário: idade , peso, altura, objetivo, sexo e exames ) | Alto | RF 02 |
+ RF 15 |Atualização de cadastro ( Paciente)| Médio | RF 01 / RF 02 |
+ RF 16 |Acesso ao Menu ( Paciente ) | Alto | RF 02 |
+ RF 17 |Visualizar dietas e sugestão de horários estipulados pelo nutricionista (Paciente)| Alto | RF 04 / RF 05 |
+ RF 18 |Questionários de acompanhamento ( Paciente ) | Médio | -- |
+ RF 19 |Acompanhamento de objetivos ( Paciente ) | Médio | RF 18 | 
+ RF 20 |Visualizar gráficos de evolução ( Paciente ) | Médio | RF 18 / RF 19 |
+ RF 21 |Visualizar sugestões de atividades físicas ( Paciente )| Médio | RF 08 | 
+ RF 22 | Agendamento de consultas | Baixo | -- |
+
 
 
 *<h3>Regras de Negócio</h3>*
