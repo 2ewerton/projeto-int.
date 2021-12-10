@@ -42,7 +42,7 @@ Requisitos Func. | Descrição | Prioridade |Depende de|
  RF 20 |Acompanhamento de objetivos ( Paciente ) | Médio | RF 18 | 
  RF 21 |Visualizar gráficos de evolução ( Paciente ) | Médio | RF 18 / RF 19 |
  RF 22 |Visualizar sugestões de atividades físicas ( Paciente )| Médio | RF 08 | 
- RF 23 | Agendamento de consultas | Baixo | -- |
+ RF 23 | Agendamento e cancelamento de consultas | Baixo | -- |
 
 
 
@@ -56,12 +56,12 @@ Regras de Negócios| Descrição |Prioridade| Depende de.|
  RN 04|As informações guardadas em bancos de dados devem ser encriptadas|Alta|--|
  RN 05|As informações alteradas pelos usuários devem ser atualizadas no aplicativo em até 30 segundos|Média|--|
  RN 06|O sistema deve suportar informações sendo alteradas pelo Nutricionista e pelo paciente simultâneamente|Alta|--|
- RN 07|O sistema deve contar com interface Web e Mobile ( Rodar em diferentes navegadores como Chrome, Vivaldi, Opera. E sistemas Mobile como Android e IOS)|Alta|--|
+ RN 07|O sistema deve contar com interface Mobile e futuramente interface web ( Rodar em diferentes sistemas Mobile como Android e IOS e futuramente colocaremos nossa interface na web rodando em Navegadores.)|Alta|--|
  RN 08|Os dados coletados através do preenchimento dos questionarios serão utilizadas na criação dos gráficos de acompanhamento| Baixa | RF 18 |
  RN 09|Deverá existir a função de excluir todas as informações de usuário do sistema|Alta|--|
  RN 10|Gráficos devem ser atualizados semanalmente| Média | RF 08|
  RN 11|Senhas de usuários deverão contar com caracteres, numerais e símbolos, totalizando pelo menos 8 dígitos na senha|Alta|--|
- RN 12|O sistema deve ser capaz de diferenciar no ato acesso, se é o nutricionista ou o paciente que está logando. | Alta | RF 02|
+ RN 12|O sistema deve ser capaz de diferenciar no ato acesso, se é o nutricionista ou o paciente quem está logando. | Alta | RF 02|
  RN 13|O sistema após o login deve atualizar em até 3 segundos| Alto | -- |
  RN 14|O nutricionista deve ser capaz de exportar dados de seus pacientes no formato de arquivo excel | Alta | 02 | 
 
@@ -69,65 +69,11 @@ Regras de Negócios| Descrição |Prioridade| Depende de.|
 Requisitos Não F. | Descrição |  Categoria |  Escopo  |Prioridade| Depende de. |
 :-----------------: |:-----------:|:------------:|:----------:|:----------:|:------------:|
  RNF 01|As Informações cadastradas deverão ser guardadas em um banco dados protegido por criptografia|Segurança de acesso|Sistema|Alta|RN 01|
- RNF 02|Informações cadastradas devem ser guardadas de forma criptografada nos bancos de dados do app|Segurança de acesso|Sistema|Alta|RF 02|
- RNF 03|O sistema deve oferecer a opção de leitura, alteração e exclusão de informações cadastradas|Segurança de dados|Funcionalidade|Alta|RF 03|
- RNF 04|Sistema deve apresentar um questionário inicial contendo algumas informações no primeiro acesso|Usabilidade|Sistema|Média|RF 04|
-RNF 05|O Sistema deve conter funcionalidades diferentes nas interfaces do profissional e do  paciente.|Interoperabilidade|Sistema|Alta|--|
- RNF 06|O sistema deverá contar com gráficos e dashboard para os usuários acompanharem sua evolução|Usabilidade|Sistema|Média|RF 09|
- RNF 07|O sistema deverá ter um menu com recomendações de exercícios físicos que possam corroborar com as dietas estipuladas|Usabilidade|Funcionalidade|Baixa|--|
- RNF 08|O sistema vai contar com a opção de marcar consultas online ou presenciais fora de agenda.|Atratividade|Funcionalidade|Média|--|
- RNF 10 |O sistema deve permitir aos usuários estarem efetuando LogOff do sistema perdendo assim todos os acessos às informações confidenciais.|Segurança de informação|Sistema|Alta|RF 12 |
-
-
-*<h3>Prototipação de telas</h3>*
-
-*<h4>Cadastro de usuário</h4>*
-
-Campos|Tipo|Tamanho|
-:--:|:-------:|:--:|
-CPF | Texto | 11 |
-Nome | Texto | Inteiro |
-Endereço | Texto | Inteiro |
-Telefone | Numérico | 9 |
-Email |Texto | 256 |
-Sexo | Texto | Inteiro |
-
-*<h4>Login</h4>*
-
-Campos|Tipo|Tamanho|
-|:---:|:---:|:-----:|
-Usuário|Texto|Inteiro|
-Senha| Texto | Inteiro|
-
-*<h4>Atualização de dados</h4>*
-
-Campos|Tipo|Tamanho|
-|:---:|:---:|:-----:|
-CPF | Texto | 11 |
-Nome | Texto | Inteiro |
-Endereço | Texto | Inteiro |
-Telefone | Numérico | 9 |
-Email |Texto | 256 |
-Sexo | Texto | Inteiro |
-
-*<h4>Questionário de primeiro acesso (Paciente)</h4>*
-
-Campos|Tipo|Tamanho|
-|:---:|:---:|:-----:|
-Paciente terá um questionário onde ele precisará  inserir as seguintes informações:Nome Completo, Idade, Altura, Peso, Alimentos favoritos | Texto | Inteiro |
-Exames| Anexo | Inteiro |
-Objetos | Texto | Inteiro |
-Hábitos Alimentares | Texto | Inteiro|
-
-*<h4>Menu com todas as funcionalidades do App</h4>*
-Campos|Tipo|Tamanho|
-|:---:|:---:|:-----:|
-A tela deve conter um menu em formato de lista ou cascata listando todas as funcionalidades do aplicativo com botões interativos| Lista | Inteiro| 
-
-*<h4>Criação e visualização de dieta</h4>*
-
-Campos|Tipo|Tamanho|
-|:---:|:---:|:-----:|
-Na interface do Nutricionista, deve ser possível a inserção de uma dieta em formato de lista interativa. Na interface do paciente, ele deve ser capaz de visualizar as informações inseridas pelo profissional. | Texto | Inteiro
-
-*<h4>Estipulação de Horários</h4>*
+  RNF 02|O sistema deve oferecer a opção de leitura, alteração e exclusão de informações cadastradas|Segurança de dados|Funcionalidade|Alta|RF 03|
+ RNF 03|Sistema deve apresentar um questionário inicial contendo algumas informações no primeiro acesso|Usabilidade|Sistema|Média|RF 04|
+RNF 04|O Sistema deve conter funcionalidades diferentes nas interfaces do profissional e do  paciente.|Interoperabilidade|Sistema|Alta|--|
+ RNF 05|O sistema deverá contar com gráficos e dashboard para os usuários acompanharem sua evolução|Usabilidade|Sistema|Média|RF 09|
+ RNF 06|O sistema deverá ter um menu com recomendações de exercícios físicos que possam corroborar com as dietas estipuladas|Usabilidade|Funcionalidade|Baixa|--|
+ RNF 07|O sistema vai contar com a opção de marcar consultas online ou presenciais fora de agenda.|Atratividade|Funcionalidade|Média|--|
+ RNF 08 |O sistema deve permitir aos usuários estarem efetuando LogOff do sistema perdendo assim todos os acessos às informações confidenciais.|Segurança de informação|Sistema|Alta| -- |
+ RNF 09 | O usuário deverá ser capaz de alterar seus objetivos dentro do aplicativo | Usabilidade | Funcionalidade | Média | -- |   
